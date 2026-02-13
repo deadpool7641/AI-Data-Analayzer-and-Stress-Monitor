@@ -1,0 +1,55 @@
+/* 1. Tailwind Directives - MUST be at the top */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Universal Reset */
+/* This ensures all elements behave predictably */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. Base Settings */
+body {
+  /* Matches your bg-slate-950 theme */
+  background-color: #020617; 
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Custom Scrollbar (Royal Purple + Maroon Mix) */
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* The background track (Dark to match app background) */
+::-webkit-scrollbar-track {
+  background: #020617; 
+}
+
+/* The moving part (Gradient) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #7c3aed, #800000); /* Royal Purple to Maroon */
+  border-radius: 4px;
+}
+
+/* Hover effect - slightly lighter */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #8b5cf6, #991b1b);
+}
+
+/* 5. Utility class to hide scrollbar but keep functionality (Optional) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

@@ -1,0 +1,12 @@
+keras
+tensorflow
+dlib
+imutils
+scikit-learn
+opencv-python
+matplotlib
+numpy
+scipy
+twilio
+flask_bcrypt
+pydantic[email]

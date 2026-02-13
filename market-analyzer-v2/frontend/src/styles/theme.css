@@ -1,0 +1,20 @@
+:root {
+  --bg-primary: #020617;       /* near-slate-950 */
+  --bg-secondary: #020617;
+  --text-primary: #e5e7eb;
+  --accent: #22d3ee;           /* cyan-400 */
+}
+
+/* Light theme (if you ever toggle) */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #0f172a;
+  --accent: #2563eb;           /* blue-600 */
+}
+
+/* Apply CSS variables if you want to use them somewhere */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
